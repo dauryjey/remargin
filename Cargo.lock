@@ -671,9 +671,9 @@ checksum = "20870f649af7073d53e38067b2a84312175d56ea15217e1b15bc83506ec50afb"
 
 [[package]]
 name = "libc"
-version = "0.2.190"
+version = "0.2.191"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ce5d3ddc6d3fa000eb1536d85e147bfe31aacaba692ed6a876f95cb7c855be78"
+checksum = "65cd87c9a6d60536580b316ad985726104730a5151c99845f2490428ef91240a"
 
 [[package]]
 name = "linux-raw-sys"
@@ -771,7 +771,7 @@ checksum = "384b8ab6d37215f3c5301a95a4accb5d64aa607f1fcb26a11b5303878451b4fe"
 [[package]]
 name = "os-shim"
 version = "0.1.0"
-source = "git+https://github.com/tixena/os-shim.git#cb631801353dcb8f03de75555076186d6bb7d34a"
+source = "git+https://github.com/tixena/os-shim.git#f878ce216ac17689389e45984abaee41fd590cd6"
 dependencies = [
  "ignore",
  "tempfile",
@@ -1256,7 +1256,7 @@ dependencies = [
 [[package]]
 name = "tixschema"
 version = "0.1.0"
-source = "git+https://github.com/tixena/tixschema.git#2662ddeb54f96f3eb3183c6ca9ede88fc7baf7cd"
+source = "git+https://github.com/tixena/tixschema.git#e6d509908cad363728504432f279f6c509f0172e"
 dependencies = [
  "log",
  "proc-macro2",
@@ -1370,9 +1370,9 @@ dependencies = [
 
 [[package]]
 name = "ureq-proto"
-version = "0.6.4"
+version = "0.6.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f86fd172ccca569e458f61b6bdd6220965a9ef36e672a6852953b51a0e1583be"
+checksum = "841583fc36089d7d59419568ae157f43a5a03a2e5a81ba87c77d1596ef46e922"
 dependencies = [
  "base64",
  "http",
