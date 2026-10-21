@@ -60,6 +60,10 @@ tracing-subscriber = { version = ">=0.3.23", features = ["env-filter", "fmt"] }
 # HTTP client (sync, minimal, pure-Rust TLS). Used by the `obsidian` feature
 # to fetch plugin assets from GitHub releases at install time.
 ureq = { version = "3.4.2" }
+# Floors for ureq's TLS stack, which ureq itself does not require: the first releases that drop
+# trust in distrusted certificate intermediates (RUSTSEC-2026-0382, RUSTSEC-2026-0381).
+rustls-webpki = "0.103.16"
+webpki-roots = "1.0.10"
 
 # Test-only crates
 assert_cmd = "2"

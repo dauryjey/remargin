@@ -26,7 +26,7 @@ zod = ["remargin-core/zod"]
 jsonschema = ["remargin-core/jsonschema"]
 # The `remargin obsidian install|uninstall` subcommand. Install fetches `main.js` and
 # `manifest.json` from the matching GitHub release at runtime, so the CLI needs no TypeScript build.
-obsidian = ["dep:ureq"]
+obsidian = ["dep:ureq", "dep:rustls-webpki", "dep:webpki-roots"]
 # `remargin session launch` and its dry-run discovery table. Off by default so a shipped binary
 # stays lean; it turns on session discovery in remargin-core.
 session = ["remargin-core/session"]
@@ -55,6 +55,9 @@ tracing-subscriber.workspace = true
 
 # HTTP client (only compiled with the `obsidian` feature).
 ureq = { workspace = true, optional = true }
+# Version floors only, for ureq's TLS stack; nothing imports them.
+rustls-webpki = { workspace = true, optional = true }
+webpki-roots = { workspace = true, optional = true }
 
 [dev-dependencies]
 assert_cmd.workspace = true
